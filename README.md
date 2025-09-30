@@ -123,6 +123,12 @@ ai_text = chat_completion(messages)
 ## Environment Variables
 
 - `OPENAI_API_KEY` (required)
+- `OPENAI_ORG_ID` (optional) — if you use OpenAI Organizations
+- `OPENAI_PROJECT_ID` (optional) — if you use OpenAI Projects
+- `OPENAI_BASE_URL` (optional) — custom API base (e.g., Azure OpenAI or an API gateway)
+- `OPENAI_API_VERSION` (optional) — required by some providers (e.g., Azure)
+- `CHAT_MODEL` (optional) — override chat model/deployment (default: `gpt-4o-mini`)
+- `EMBEDDING_MODEL` (optional) — override embeddings model/deployment (default: `text-embedding-3-small`)
 - `CHROMA_DB_DIR` (default: `./data/chroma`)
 - `BACKEND_HOST` (default: `127.0.0.1`)
 - `BACKEND_PORT` (default: `8000`)
